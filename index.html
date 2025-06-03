@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anand Karaj Matrimony</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#home" class="logo-link">
+                <img src="Logo 1.jpg" alt="Logo" class="logo" />
+            </a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#values">Values</a>
+                <a href="#testimonials">Voices</a>
+                <a href="#register">Register</a>
+                <a href="#contact-us">Contact Us</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Logo 2 Banner -->
+    <section class="logo2-banner">
+        <img src="Logo 2.jpg" alt="Anand Karaj Banner" />
+    </section>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Finding a Partner in Guru Sahib’s Light</h1>
+            <p>A seva-based platform connecting Gursikh souls for the sacred bond of Anand Karaj, in accordance with Sikh Rehat Maryada.</p>
+            <a href="#register" class="cta-button">Register Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-content">
+            <div>
+                <h2>Why This Seva Exists</h2>
+                <p>This website is a panthic seva, created to connect Sikh individuals who seek a marriage rooted in Gurmat, not glamour. It’s not a dating app or business — just a humble medium to help you find a life partner on the path of Sikhi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values / Services -->
+    <section id="values" class="services">
+        <div class="container">
+            <h2>What Makes This Seva Unique</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>📿 Gurmat-Centric Values</h3>
+                    <p>Every profile is rooted in Sikhi principles — not superficial traits.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🙏 No Fees, Only Seva</h3>
+                    <p>This platform is run by sevadaars and is entirely free to use.</p>
+                </div>
+                <div class="service-card">
+                    <h3>✅ Profiles Reviewed with Care</h3>
+                    <p>Only those sincerely seeking Anand Karaj are welcome here.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🧡 100% Sikh-Only Matrimony</h3>
+                    <p>We honor the sanctity of Anand Karaj as per Sikh Rehat Maryada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sangat Voices -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Guru Sahib’s Grace</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>“We didn’t expect to find someone so aligned in Gurmat. It was truly Guru Sahib's kirpa through this platform.”</p>
+                    <h4>– Gursikh Couple</h4>
+                </div>
+                <div class="testimonial">
+                    <p>“Vaheguru Ji di kirpa naal, my daughter found a Gurmukh jeevan saathi here. May this seva continue to grow.”</p>
+                    <h4>– A Sikh Father</h4>
+                </div>
+                <div class="testimonial">
+                    <p>“This is what the Panth needs today — Gurmat-based matchmaking.”</p>
+                    <h4>– Sangat Reflection</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register -->
+    <section id="register" class="contact">
+        <div class="container">
+            <h2>Create Your Profile</h2>
+            <p>Submit your details on our secure external form to connect with fellow seekers of Anand Karaj.</p>
+            <a href="https://yourformlink.com" target="_blank" class="cta-button">Go to Registration Form</a>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact-us" class="contact enhanced-contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have questions or need guidance, we’re here to help. Please reach out to us at:</p>
+            <a href="mailto:punjabisamaj129@gmail.com" class="email-link">punjabisamaj129@gmail.com</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>This platform is a panthic seva – free, non-commercial, and rooted in Sikhi. May Guru Granth Sahib Ji bless every soul seeking Anand Karaj in truth and love.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+                const navbar = document.querySelector('.navbar');
+                if (navbar.classList.contains('active')) {
+                    navbar.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
+            });
+        });
+
+        // Hamburger toggle
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.querySelector('.navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
