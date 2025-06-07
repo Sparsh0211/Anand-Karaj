@@ -173,14 +173,14 @@ body {
     background: #d85e7c;
 }
 
-/* Logo 2 Banner */
 .logo2-banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-bottom: 40px;
+    margin-bottom: 10px; /* Reduced from 40px to 10px */
     border-bottom: 6px solid #fbd0d0;
 }
+
 
 /* About Section */
 .about {
