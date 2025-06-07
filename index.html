@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Anand Karaj Matrimony</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -15,7 +16,7 @@
     <header class="site-header">
         <div class="header-container">
             <a href="#home" class="logo-link">
-                <img src="Logo 1.jpg" alt="Logo" class="logo" />
+                <img src="Logo.jpg" alt="Logo" class="logo" />
             </a>
             <nav class="navbar">
                 <a href="#home">Home</a>
@@ -35,14 +36,15 @@
 
     <!-- Logo 2 Banner -->
     <section class="logo2-banner">
-        <img src="Logo 2.jpg" alt="Anand Karaj Banner" />
+        <img src="Cover image.jpg" alt="Anand Karaj Banner" />
     </section>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <h1>Finding a Partner in Guru Sahib’s Light</h1>
-            <p>A seva-based platform connecting Gursikh souls for the sacred bond of Anand Karaj, in accordance with Sikh Rehat Maryada.</p>
+            <p>A seva-based platform connecting Gursikh souls for the sacred bond of Anand Karaj, in accordance with
+                Sikh Rehat Maryada.</p>
             <a href="#register" class="cta-button">Register Now</a>
         </div>
     </section>
@@ -52,7 +54,9 @@
         <div class="container about-content">
             <div>
                 <h2>Why This Seva Exists</h2>
-                <p>This website is a panthic seva, created to connect Sikh individuals who seek a marriage rooted in Gurmat, not glamour. It’s not a dating app or business — just a humble medium to help you find a life partner on the path of Sikhi.</p>
+                <p>This website is a panthic seva, created to connect Sikh individuals who seek a marriage rooted in
+                    Gurmat, not glamour. It’s not a dating app or business — just a humble medium to help you find a
+                    life partner on the path of Sikhi.</p>
             </div>
         </div>
     </section>
@@ -88,11 +92,13 @@
             <h2>Guru Sahib’s Grace</h2>
             <div class="testimonials-grid">
                 <div class="testimonial">
-                    <p>“We didn’t expect to find someone so aligned in Gurmat. It was truly Guru Sahib's kirpa through this platform.”</p>
+                    <p>“We didn’t expect to find someone so aligned in Gurmat. It was truly Guru Sahib's kirpa through
+                        this platform.”</p>
                     <h4>– Gursikh Couple</h4>
                 </div>
                 <div class="testimonial">
-                    <p>“Vaheguru Ji di kirpa naal, my daughter found a Gurmukh jeevan saathi here. May this seva continue to grow.”</p>
+                    <p>“Vaheguru Ji di kirpa naal, my daughter found a Gurmukh jeevan saathi here. May this seva
+                        continue to grow.”</p>
                     <h4>– A Sikh Father</h4>
                 </div>
                 <div class="testimonial">
@@ -108,7 +114,7 @@
         <div class="container">
             <h2>Create Your Profile</h2>
             <p>Submit your details on our secure external form to connect with fellow seekers of Anand Karaj.</p>
-            <a href="https://yourformlink.com" target="_blank" class="cta-button">Go to Registration Form</a>
+            <a href="#" target="_blank" class="cta-button">Go to Registration Form</a>
         </div>
     </section>
 
@@ -123,7 +129,8 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>This platform is a panthic seva – free, non-commercial, and rooted in Sikhi. May Guru Granth Sahib Ji bless every soul seeking Anand Karaj in truth and love.</p>
+        <p>This platform is a panthic seva – free, non-commercial, and rooted in Sikhi. May Guru Granth Sahib Ji bless
+            every soul seeking Anand Karaj in truth and love.</p>
     </footer>
 
     <!-- Scripts -->
@@ -154,6 +161,22 @@
             navbar.classList.toggle('active');
             hamburger.classList.toggle('active');
         });
+
+        // Fade-in on load
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.logo').classList.add('fade-in');
+            document.querySelector('.navbar').classList.add('fade-in');
+            document.querySelector('.hamburger').classList.add('fade-in');
+        });
+
+        // Fade-in on load
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.logo').classList.add('fade-in');
+            document.querySelector('.navbar').classList.add('fade-in');
+            document.querySelector('.hamburger').classList.add('fade-in');
+            document.querySelector('.logo2-banner img').classList.add('fade-in');
+        });
+
     </script>
 
 </body>
